@@ -1,43 +1,128 @@
-.hero {
-    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-    url('images/emergency.jpg');
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
-.hero h1 {
-    font-size: 3rem;
+body{
+background:#f4f7fb;
 }
 
-.hero p {
-    font-size: 1.4rem;
+header{
+background:#081f4d;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-.btn {
-    background: #ff3b30;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-top: 20px;
-    font-weight: bold;
+.logo h1{
+color:white;
 }
 
-.btn:hover {
-    background: #d92c23;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
 }
 
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
+nav a:hover{
+color:#00d4ff;
+}
+
+.hero{
+height:85vh;
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1500&q=80");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+max-width:700px;
+margin:auto;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:15px 30px;
+background:#ff3c38;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.button:hover{
+background:#d92f2c;
+}
+
+.features{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:80px 10%;
+flex-wrap:wrap;
+}
+
+.feature-box{
+background:white;
+padding:30px;
+width:300px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+text-align:center;
+}
+
+.feature-box h2{
+margin-bottom:15px;
+color:#081f4d;
+}
+
+.about-app{
+padding:80px 15%;
+text-align:center;
+background:white;
+}
+
+.about-app h2{
+font-size:40px;
+margin-bottom:20px;
+color:#081f4d;
+}
+
+.about-app p{
+font-size:20px;
+line-height:1.8;
+}
+
+footer{
+background:#081f4d;
+color:white;
+text-align:center;
+padding:20px;
 }
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
